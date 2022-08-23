@@ -13,7 +13,7 @@ Specifically, the user will be required to interact with the script at two stage
 1. The user will be prompted to provide an estimate for the number of separate time points describing a single period of the data
 
    ```
-   Input an (integer) estimate for the number of data per period:
+   Input an (integer) estimate for the number of data per period (data autocorrelation suggests XXX):
    ```
    
    before being asked to confirm the choice or choose another estimate
@@ -24,7 +24,7 @@ Specifically, the user will be required to interact with the script at two stage
    
    Graphics will be displayed at each stage to inform the user's decision.
    
-   The intent here is to give the user more control over the process, particularly if they will have direct knowledge of the trace frequency. If this is not the case, and the data set is too large or 'noisy' for the user to choose for themselves based on the graphical output, an automatic estimate is offered based on calculating the autocorrelation of the data.
+   The intent here is to give the user more control over the process, particularly if they will have direct knowledge of the trace frequency. If this is not the case, and the data set is too large or 'noisy' for the user to easily choose for themselves based on the graphical output, an automatic estimate is offered based on calculating the autocorrelation of the data.
    
 2. The user will be similarly prompted to specify the number of Fourier modes to truncate at. The intent here is to allow the user to select the minimum number of modes required to accurately capture the qualitative nature of the beat, but this step could be automated to choose the minimal number of modes required to achieve some desired tolerance.
 
