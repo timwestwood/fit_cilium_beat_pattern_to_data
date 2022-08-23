@@ -96,7 +96,8 @@ hold on;
 plot(sample_points(:,end-1), 'k-');
 plot(sample_points(:,end), 'b-');
 title('How many data per period?');
-estimated_data_per_period = input('Input an (integer) estimate for the number of data per period: '); % Make this estimate based on the tip, which should move the greatest distance. We must use a single value for all data or we will introduce artificial phase differences.
+autocorr_estimated_data_per_period = round(0.5*(estimate_period(sample_points(:,end-1)) + estimate_period(sample_points(:,end))));
+estimated_data_per_period = input(sprintf('Input an (integer) estimate for the number of data per period (data autocorrelation suggests %i): ', autocorr_estimated_data_per_period)); % Make this estimate based on the tip, which should move the greatest distance. We must use a single value for all data or we will introduce artificial phase differences.
 bad_period = true;
 while bad_period
     try
