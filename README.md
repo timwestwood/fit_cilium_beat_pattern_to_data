@@ -7,7 +7,7 @@ To run the code, the source file itself should first be edited, changing the lin
 file_name = 'example_cilium_trace';
 file_extension = '.csv';
 ```
-to provide the name and extension of the relevant data file[^file_path]. After this, the script will run ***interactively*** in the command-line interface.
+to provide the name and extension of the relevant data file[^file_path]. After this, the script is run ***interactively*** in the command-line interface.
 
 Specifically, the user will be required to interact with the script at two stages:
 1. The user will be prompted to provide an estimate for the number of separate time points describing a single period of the data
