@@ -54,4 +54,4 @@ Does this number of modes offer a good fit? Press enter if it does, or enter a n
 
 [^octave]: https://octave.org/
 
-[^paper_link]: <insert link here>
+[^paper_link]: https://doi.org/10.1101/2022.09.19.508546
